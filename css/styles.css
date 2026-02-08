@@ -2437,6 +2437,7 @@ footer {
         font-size: 0.9rem;
         line-height: 1.5;
         color: rgba(255, 255, 255, 0.7);
+        text-align: justify;
     }
 }
 
@@ -2532,5 +2533,16 @@ footer {
         align-items: center;
         /* Center checkmarks items */
         margin-bottom: 2rem;
+    }
+}
+
+/* Utility for mobile-only breaks */
+.mobile-break {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-break {
+        display: block;
     }
 }
