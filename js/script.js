@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Simple client validation
         const phone = data.get('phone');
         if (phone.length < 10) {
-            alert('Please enter a valid phone number');
+            window.alert('Please enter a valid phone number');
             return;
         }
 
@@ -135,12 +135,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 5000);
             } else {
                 const errorData = await response.json();
-                alert('Oops! There was a problem submitting your form');
+                window.alert('Oops! There was a problem submitting your form');
                 submitBtn.textContent = 'Send Message';
                 submitBtn.disabled = false;
             }
         } catch (error) {
-            alert('Oops! There was a problem submitting your form');
+            window.alert('Oops! There was a problem submitting your form');
             submitBtn.textContent = 'Send Message';
             submitBtn.disabled = false;
         }
